@@ -1,0 +1,8 @@
+@function toEm($pxWidth) {
+  @if not $em-disabled {
+    @return $pxWidth / $em-base * 1em;
+  }
+  @else{
+    @return $pxWidth;
+  }
+}

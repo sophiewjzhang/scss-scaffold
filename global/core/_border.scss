@@ -1,0 +1,46 @@
+/** single border style
+* this generates the classes with the name pattern of {spaceType}-{spacePosition}-{spaceScale}
+* example:
+* to define a div with a solid bottom border, <div class="border-bottom">
+*/
+@each $value in top, bottom, left, right {
+  .border-#{$value} {
+    border-#{$value}: $global-border-size $global-border-style $global-border-color;
+  }
+}
+.border-none{
+  border: none !important;
+}
+
+.border-all{
+  border: $global-border-size $global-border-style $global-border-color;
+}
+
+.border-ribbon {
+  border-top: $global-border-size $global-border-style $global-border-color;
+  border-bottom: $global-border-size $global-border-style $global-border-color;
+}
+
+/*
+* round borders
+*/
+.radius{
+  @extend .border-all;
+  @include corner($global-border-radius, all);
+}
+.radius-top-left{
+  @extend .border-all;
+  @include corner($global-border-radius, top, left);
+}
+.radius-top-right{
+  @extend .border-all;
+  @include corner($global-border-radius, top, right);
+}
+.radius-bottom-left{
+  @extend .border-all;
+  @include corner($global-border-radius, bottom, left);
+}
+.radius-top-right{
+  @extend .border-all;
+  @include corner($global-border-radius, bottom, right);
+}

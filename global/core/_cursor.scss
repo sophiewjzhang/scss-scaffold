@@ -1,0 +1,11 @@
+/*********************
+* common cursor styles.
+*********************/
+@each $value in none, pointer, help, progress, wait, crosshair, not-allowed, zoom-in, zoom-out{
+  .cursor-#{$value} {
+    cursor: $value;
+  }
+}
+.cursor-image{
+  cursor: url( $cursor-url) , pointer;
+}
