@@ -1,0 +1,26 @@
+{
+  "name": "scss-scaffold",
+  "description": "The essential scss classes for a powerful yet lighter css file",
+  "version": "0.2.0",
+  "keywords": [
+    "SCSS",
+    "scaffold",
+    "lightweight",
+    "css3",
+    "front-end"
+  ],
+  "main": [
+    "_scss-scaffold.scss",
+    "_variables.scss",
+    "dist/css/scss-scaffold.css"
+
+  ],
+  "ignore": [
+    "demo",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "docs"
+  ],
+  "dependencies": {
+  }
+}

@@ -1,0 +1,679 @@
+/*=========================
+* general SCSS styles
+* to customize, modify the _variable.scss.
+=========================*/
+/**
+* the variables to be customized.
+*/
+/*
+* space variables, used for padding and margin.
+*/
+/**
+* global border styles
+*/
+/**
+* grey colors
+*/
+/**
+* color pallete
+*/
+/**
+* button styles
+*/
+/**
+* global typography style
+*/
+/**
+* cursor image path
+*/
+/*
+* mixins
+*/
+/**
+variables:
+$global-border-radius: the application-wide border thickness.
+$global-border-color: the application-wide border color.
+*/
+/**
+* A linear gradient from top to bottom.
+*/
+/**
+* A linear gradient from left to right.
+*/
+/*
+* basic styles
+*/
+/** single border style
+* this generates the classes with the name pattern of {spaceType}-{spacePosition}-{spaceScale}
+* example:
+* to define a div with a solid bottom border, <div class="border-bottom">
+*/
+.border-top {
+  border-top: 1px solid #cccccc; }
+
+.border-bottom {
+  border-bottom: 1px solid #cccccc; }
+
+.border-left {
+  border-left: 1px solid #cccccc; }
+
+.border-right {
+  border-right: 1px solid #cccccc; }
+
+.border-none {
+  border: none !important; }
+
+.border-all, .radius, .radius-top-left, .radius-all, .radius-top-right, .radius-bottom-left {
+  border: 1px solid #cccccc; }
+
+.border-ribbon {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; }
+
+/*
+* round borders
+*/
+.radius-top-left, .radius-all {
+  border-top-left-radius: 5px; }
+
+.radius-top-right, .radius-all {
+  border-top-right-radius: 5px; }
+
+.radius-bottom-left, .radius-all {
+  border-bottom-left-radius: 5px; }
+
+.radius-top-right, .radius-all {
+  border-bottom-right-radius: 5px; }
+
+/**
+buttons
+* example:
+* <div class="button button-m button-center button-radius"><span>sample</span></div>
+* this will display a button with round corners.
+*/
+.button {
+  cursor: pointer;
+  width: auto;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #0011ff; }
+  .button.button-left {
+    float: left; }
+  .button.button-right {
+    float: right; }
+  .button.button-center {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; }
+  .button.button-full {
+    width: 100%; }
+  .button.button-s {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px; }
+  .button.button-m {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .button.button-l {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px; }
+  .button.button-xl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .button.button-radius {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .button.button-label {
+    display: inline-block;
+    background: none;
+    border: none;
+    box-shadow: none; }
+    .button.button-label:hover, .button.button-label:focus, .button.button-label:active {
+      color: #ffffff; }
+
+/*********************
+* common cursor styles.
+*********************/
+.cursor-none {
+  cursor: none; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.cursor-help {
+  cursor: help; }
+
+.cursor-progress {
+  cursor: progress; }
+
+.cursor-wait {
+  cursor: wait; }
+
+.cursor-crosshair {
+  cursor: crosshair; }
+
+.cursor-not-allowed {
+  cursor: not-allowed; }
+
+.cursor-zoom-in {
+  cursor: zoom-in; }
+
+.cursor-zoom-out {
+  cursor: zoom-out; }
+
+.cursor-image {
+  cursor: url("images/cursor.png"), pointer; }
+
+/*********************
+* dimension styles:
+* width-auto, height-auto, width-full, height-full
+*********************/
+.width-auto {
+  width: auto; }
+
+.height-auto {
+  height: auto; }
+
+.width-full {
+  width: 100%; }
+
+.height-full {
+  height: 100%; }
+
+/*********************
+* display styles:
+* display-none, display-hidden, display-block, display-inline-block, display-table, display-table-cell
+* visible, hidden, collapse
+*********************/
+.display-none {
+  display: none; }
+
+.display-inline {
+  display: inline; }
+
+.display-block {
+  display: block; }
+
+.display-inline-block {
+  display: inline-block; }
+
+.display-table {
+  display: table; }
+
+.display-table-cell {
+  display: table-cell; }
+
+.visible {
+  visibility: visible; }
+
+.hidden {
+  visibility: hidden; }
+
+.collapse {
+  visibility: collapse; }
+
+/*********************
+overflow
+*********************/
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.overflow-v-scroll {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.overflow-h-scroll {
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+/*********************
+* float styles.
+*********************/
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.float-none {
+  float: none; }
+
+.v-gradient-dark {
+  background: -webkit-linear-gradient(left, #cccccc, #4d4d4d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #cccccc, #4d4d4d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #cccccc, #4d4d4d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #cccccc, #4d4d4d);
+  /* Standard syntax */ }
+
+.v-gradient-light {
+  background: -webkit-linear-gradient(left, #cccccc, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #cccccc, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #cccccc, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #cccccc, white);
+  /* Standard syntax */ }
+
+.h-gradient-dark {
+  background: -webkit-linear-gradient(#cccccc, #4d4d4d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, #4d4d4d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, #4d4d4d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, #4d4d4d);
+  /* Standard syntax */ }
+
+.h-gradient-light {
+  background: -webkit-linear-gradient(#cccccc, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, white);
+  /* Standard syntax */ }
+
+.toolTip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #000000; }
+  .toolTip.hovered {
+    display: block; }
+
+.strike {
+  text-align: center;
+  border-bottom: 1px solid;
+  margin: 0 0 1em 0;
+  line-height: 0.5em;
+  display: inline-block; }
+
+/* sup script */
+sup {
+  vertical-align: super !important;
+  line-height: 0 !important;
+  top: 0; }
+
+/*********************
+* list styles.
+*********************/
+ul.list-none {
+  list-style: decimal;
+  list-style-type: decimal; }
+
+ul.list-decimal {
+  list-style: decimal;
+  list-style-type: decimal; }
+
+ul.list-decimal-leading-zero {
+  list-style: decimal;
+  list-style-type: decimal; }
+
+ul.list-disc {
+  list-style: decimal;
+  list-style-type: decimal; }
+
+ul.list-circle {
+  list-style: decimal;
+  list-style-type: decimal; }
+
+ul.list-square {
+  list-style: decimal;
+  list-style-type: decimal; }
+
+.opaque {
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+.transparent {
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+.overlay {
+  filter: alpha(opacity=50);
+  opacity: 0.5; }
+
+/*********************
+* position an element
+* example:
+* <div class="position-container">
+    <div class="position-center"></div>
+  </div>
+*********************/
+.position-left {
+  display: inline-block;
+  float: left;
+  clear: both; }
+
+.position-right {
+  display: inline-block;
+  float: right;
+  clear: both; }
+
+.position-center, .position-container .position-center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both; }
+
+.position-container {
+  width: 100%;
+  text-align: center; }
+
+/** spacing helpers
+* this generates the classes with the name pattern of {spaceType}-{spacePosition}-{spaceScale}
+* examples:
+* to define a div with small padding all around,use the class padding-all-s-s
+* to define a div with top large margin, use the class margin-top-s-l
+*/
+.padding-all-s-none {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.padding-top-s-none {
+  padding-top: 0px; }
+
+.padding-bottom-s-none {
+  padding-bottom: 0px; }
+
+.padding-left-s-none {
+  padding-left: 0px; }
+
+.padding-right-s-none {
+  padding-right: 0px; }
+
+.margin-all-s-none {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.margin-top-s-none {
+  margin-top: 0px; }
+
+.margin-bottom-s-none {
+  margin-bottom: 0px; }
+
+.margin-left-s-none {
+  margin-left: 0px; }
+
+.margin-right-s-none {
+  margin-right: 0px; }
+
+.padding-all-s-xs {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px; }
+
+.padding-top-s-xs {
+  padding-top: 3px; }
+
+.padding-bottom-s-xs {
+  padding-bottom: 3px; }
+
+.padding-left-s-xs {
+  padding-left: 3px; }
+
+.padding-right-s-xs {
+  padding-right: 3px; }
+
+.margin-all-s-xs {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px; }
+
+.margin-top-s-xs {
+  margin-top: 3px; }
+
+.margin-bottom-s-xs {
+  margin-bottom: 3px; }
+
+.margin-left-s-xs {
+  margin-left: 3px; }
+
+.margin-right-s-xs {
+  margin-right: 3px; }
+
+.padding-all-s-s {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px; }
+
+.padding-top-s-s {
+  padding-top: 6px; }
+
+.padding-bottom-s-s {
+  padding-bottom: 6px; }
+
+.padding-left-s-s {
+  padding-left: 6px; }
+
+.padding-right-s-s {
+  padding-right: 6px; }
+
+.margin-all-s-s {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  margin-right: 6px; }
+
+.margin-top-s-s {
+  margin-top: 6px; }
+
+.margin-bottom-s-s {
+  margin-bottom: 6px; }
+
+.margin-left-s-s {
+  margin-left: 6px; }
+
+.margin-right-s-s {
+  margin-right: 6px; }
+
+.padding-all-s-m {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px; }
+
+.padding-top-s-m {
+  padding-top: 9px; }
+
+.padding-bottom-s-m {
+  padding-bottom: 9px; }
+
+.padding-left-s-m {
+  padding-left: 9px; }
+
+.padding-right-s-m {
+  padding-right: 9px; }
+
+.margin-all-s-m {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-left: 9px;
+  margin-right: 9px; }
+
+.margin-top-s-m {
+  margin-top: 9px; }
+
+.margin-bottom-s-m {
+  margin-bottom: 9px; }
+
+.margin-left-s-m {
+  margin-left: 9px; }
+
+.margin-right-s-m {
+  margin-right: 9px; }
+
+.padding-all-s-l {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.padding-top-s-l {
+  padding-top: 12px; }
+
+.padding-bottom-s-l {
+  padding-bottom: 12px; }
+
+.padding-left-s-l {
+  padding-left: 12px; }
+
+.padding-right-s-l {
+  padding-right: 12px; }
+
+.margin-all-s-l {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px; }
+
+.margin-top-s-l {
+  margin-top: 12px; }
+
+.margin-bottom-s-l {
+  margin-bottom: 12px; }
+
+.margin-left-s-l {
+  margin-left: 12px; }
+
+.margin-right-s-l {
+  margin-right: 12px; }
+
+.padding-all-s-xl {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.padding-top-s-xl {
+  padding-top: 15px; }
+
+.padding-bottom-s-xl {
+  padding-bottom: 15px; }
+
+.padding-left-s-xl {
+  padding-left: 15px; }
+
+.padding-right-s-xl {
+  padding-right: 15px; }
+
+.margin-all-s-xl {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.margin-top-s-xl {
+  margin-top: 15px; }
+
+.margin-bottom-s-xl {
+  margin-bottom: 15px; }
+
+.margin-left-s-xl {
+  margin-left: 15px; }
+
+.margin-right-s-xl {
+  margin-right: 15px; }
+
+/*=========================
+* general typography styles
+* font weight: weight-normal, weight-bold, weight-light
+* text transform: transform-uppercase, transform-lowercase, transform-capitalize, transform-none
+* text alignment: alignment-left, alignment-right, alignment-center, alignment-top, alignment-bottom, alignment-middle
+* text decoration: decoration-underline, decoration-none
+=========================*/
+.weight-normal {
+  font-weight: 300; }
+
+.weight-bold {
+  font-weight: 500; }
+
+.weight-light {
+  font-weight: 100; }
+
+.transform-uppercase {
+  text-transform: uppercase; }
+
+.transform-lowercase {
+  text-transform: lowercase; }
+
+.transform-capitalize {
+  text-transform: capitalize; }
+
+.transform-none {
+  text-transform: none; }
+
+.alignment-left {
+  text-align: left; }
+
+.alignment-right {
+  text-align: right; }
+
+.alignment-center {
+  text-align: center; }
+
+.alignment-top {
+  vertical-align: top; }
+
+.alignment-bottom {
+  vertical-align: bottom; }
+
+.alignment-middle {
+  vertical-align: middle; }
+
+.decoration-underline {
+  text-decoration: underline; }
+
+.decoration-none {
+  text-decoration: none; }
+
+/*********************
+* z-index styles
+*********************/
+.z-index-0 {
+  z-index: 0; }
+
+.z-index-1 {
+  z-index: 100; }
+
+.z-index-2 {
+  z-index: 200; }
+
+.z-index-3 {
+  z-index: 300; }
+
+.z-index-4 {
+  z-index: 400; }
+
+.z-index-5 {
+  z-index: 500; }
+
+.z-index-max {
+  z-index: 99999; }
