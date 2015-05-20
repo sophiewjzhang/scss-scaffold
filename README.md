@@ -1,10 +1,10 @@
-# packaged SCSS style guide
+# Packaged SCSS style guide
 
-A package containing essential css classes in the SCSS format. Use this package to eliminate the effort of creating the very basic reusable classes such as padding, border, font styles, etc when you start the initial scalfoldding of your project.
+A css package containing essential classes in the SCSS format. Use this package to eliminate the effort of creating the basic classes such as padding, border, font styles, etc. when scaffold your single web page application.
 
-Zero effort for typical css features such as making a <div> displayed as inline for alignment purpose and special effect such as creating a <div> filled with a linear gradient.
+Use these classes to create common styling effect such as a gradient button, round border, etc.
 
-It's pure SCSS so you could add it on top of your SCSS framework such as Bootstrap with less concern of conflicts.
+Could be used as an add-on of Bootstrap.
 
 ## Install
 
