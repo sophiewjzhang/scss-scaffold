@@ -8,29 +8,15 @@ It's pure SCSS so you could add it on top of your SCSS framework such as Bootstr
 
 ## Install
 
-You can install this package with `bower`.
+. Install with bower: bower install scss-scaffold
 
-### bower
+## Include in your project
 
-```shell
-bower install scss-scaffold
-```
-
-Then import the package in your main SCSS file.
+In your main SCSS file.
 
 @import "scss-scaffold.scss";
 
 ## Usage
-Development install.
-
-1. Run npm install.
-2. Install gulp del
-    $ npm install --save-dev gulp del
-
-## Usage
 Use the pre-defined class seperately or combine multiple ones to create the layout needed.
 
-## Demo
-
-Online demo is available.
 
