@@ -1,0 +1,31 @@
+/*=========================
+* general SCSS styles
+* to customize, modify the _variable.scss.
+=========================*/
+@import "variables";
+@import "functions/em";
+/*
+* mixins
+*/
+@import "mixins/corner";
+@import "mixins/gradient";
+@import "mixins/opacity";
+@import "mixins/prefix";
+/*
+* basic styles
+*/
+@import "core/border";
+@import "core/button";
+@import "core/cursor";
+@import "core/dimension";
+@import "core/display";
+@import "core/float";
+@import "core/gradient";
+@import "core/helper";
+@import "core/list";
+@import "core/opacity";
+@import "core/position";
+@import "core/spacing";
+@import "core/typo";
+@import "core/zdex";
+

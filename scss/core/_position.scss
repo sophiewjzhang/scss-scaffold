@@ -1,0 +1,30 @@
+/*********************
+* position an element
+* example:
+* <div class="position-container">
+    <div class="position-center"></div>
+  </div>
+*********************/
+.position-left{
+  display:inline-block;
+  float:left;
+  clear:both;
+}
+.position-right{
+  display:inline-block;
+  float:right;
+  clear:both;
+}
+.position-center{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  clear:both;
+}
+.position-container{
+  width:100%;
+  text-align: center;
+  .position-center{
+    @extend .position-center
+  }
+}

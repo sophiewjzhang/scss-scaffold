@@ -26,21 +26,27 @@
 */
 .radius{
   @extend .border-all;
-  @include corner($global-border-radius, all);
 }
 .radius-top-left{
-  @extend .border-all;
+  @extend .radius;
   @include corner($global-border-radius, top, left);
 }
 .radius-top-right{
-  @extend .border-all;
+  @extend .radius;
   @include corner($global-border-radius, top, right);
 }
 .radius-bottom-left{
-  @extend .border-all;
+  @extend .radius;
   @include corner($global-border-radius, bottom, left);
 }
 .radius-top-right{
-  @extend .border-all;
+  @extend .radius;
   @include corner($global-border-radius, bottom, right);
+}
+.radius-all{
+  @extend .radius;
+  @extend .radius-top-left;
+  @extend .radius-top-right;
+  @extend .radius-bottom-left;
+  @extend .radius-top-right;
 }

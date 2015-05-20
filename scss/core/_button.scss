@@ -1,0 +1,66 @@
+/**
+buttons
+* example:
+* <div class="button button-m button-center button-radius"><span>sample</span></div>
+* this will display a button with round corners.
+*/
+.button{
+  cursor:pointer;
+  width:auto;
+  display: inline-block;
+  color: $button-label-color;
+  background-color: $button-background-color;
+  &.button-left{
+    float:left;
+  }
+  &.button-right{
+    float:right;
+  }
+  &.button-center{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.button-full{
+    width:100%;
+  }
+  &.button-s{
+    padding-top:$button-s-size-vertical;
+    padding-bottom:$button-s-size-vertical;
+    padding-left:$button-s-size-horizontal;
+    padding-right:$button-s-size-horizontal;
+  }
+  &.button-m{
+    padding-top:$button-m-size-vertical;
+    padding-bottom:$button-m-size-vertical;
+    padding-left:$button-m-size-horizontal;
+    padding-right:$button-m-size-horizontal;
+  }
+  &.button-l{
+    padding-top:$button-l-size-vertical;
+    padding-bottom:$button-l-size-vertical;
+    padding-left:$button-l-size-horizontal;
+    padding-right:$button-l-size-horizontal;
+  }
+  &.button-xl{
+    padding-top:$button-xl-size-vertical;
+    padding-bottom:$button-xl-size-vertical;
+    padding-left:$button-xl-size-horizontal;
+    padding-right:$button-xl-size-horizontal;
+  }
+  &.button-radius{
+    @include corner($button-border-radius, top, left);
+    @include corner($button-border-radius, top, right);
+    @include corner($button-border-radius, bottom, left);
+    @include corner($button-border-radius, bottom, right);
+  }
+  &.button-label{
+    display:inline-block;
+    background:none;
+    border: none;
+    box-shadow: none;
+    &:hover, &:focus, &:active {
+      color: $button-label-color;
+    }
+  }
+}

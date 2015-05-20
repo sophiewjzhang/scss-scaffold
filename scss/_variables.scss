@@ -1,7 +1,7 @@
 /**
 * the variables to be customized.
 */
-$em-base: 12px !default;
+$em-base: 14px !default;
 //control whether to display in em or px, with default of em. Set true to use px instead of em.
 $em-disabled: false !default;
 /*
@@ -12,8 +12,8 @@ $s-s: 2;
 $s-m: 3;
 $s-l: 4;
 $s-xl: 5;
-$margin-base: toEm(3px);
-$padding-base: toEm(3px);
+$margin-base: 3px;
+$padding-base: 3px;
 /**
 * global border styles
 */
@@ -27,6 +27,25 @@ $global-border-color: #cccccc !default;
 $grey: #cccccc;
 $dark-grey: darken($grey, 50%);
 $light-grey: lighten($grey, 50%);
+/**
+* color pallete
+*/
+$white: #ffffff;
+$black: #000000;
+/**
+* button styles
+*/
+$button-border-radius: 5px !default;
+$button-label-color: #ffffff;
+$button-background-color: #0011ff;
+$button-s-size-vertical: 3px;
+$button-s-size-horizontal: 3px;
+$button-m-size-vertical: 5px;
+$button-m-size-horizontal: 5px;
+$button-l-size-vertical: 8px;
+$button-l-size-horizontal: 8px;
+$button-xl-size-vertical: 10px;
+$button-xl-size-horizontal: 10px;
 /**
 * global typography style
 */

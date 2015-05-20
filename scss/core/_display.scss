@@ -29,19 +29,3 @@ overflow
   overflow-x: auto;//auto to hide when short
   overflow-y: hidden;
 }
-/*********************
-* center an element
-* example:
-* <div class="wrapper-center">
-    <div class="content"></div>
-  </div>
-*********************/
-.wrapper-center{
-  width:100%;
-  text-align: center;
-  .content{
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
